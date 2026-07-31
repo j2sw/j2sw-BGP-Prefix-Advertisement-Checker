@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest another check or data source
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Operational use case
+      description: Explain the routing question this feature should answer.
+    validations:
+      required: true
+  - type: textarea
+    id: data-source
+    attributes:
+      label: Data source
+      description: Link to the authoritative API or routing documentation.
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected result
+      description: Describe the pass, warning, or failure behavior.
+    validations:
+      required: true

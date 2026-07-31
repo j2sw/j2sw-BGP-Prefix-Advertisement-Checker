@@ -1,0 +1,25 @@
+{
+  "name": "j2sw-prefix-advertisement-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check": "npm test && npm run build"
+  },
+  "dependencies": {
+    "ipaddr.js": "2.2.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "8.0.13"
+  }
+}
