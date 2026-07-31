@@ -32,44 +32,6 @@ RIPE RIS collectors do not represent every network. A passing result shows that
 the advertisement matches the tested data. It does not prove reachability from
 every source network.
 
-## Run locally
-
-Install Node.js 24, then run:
-
-```bash
-npm ci
-npm run dev
-```
-
-Vite prints the local address after it starts.
-
-## Test and build
-
-```bash
-npm test
-npm run build
-```
-
-The tests cover IPv4 and IPv6 prefix validation, CIDR normalization, 32-bit ASN
-validation, a complete passing advertisement, prefix-only lookup, origin
-mismatch, and rejection of invalid input before an API request.
-
-The production files are written to `dist/`.
-
-## Deploy with GitHub Pages
-
-1. Create an empty GitHub repository.
-2. Copy every file from this project into the repository.
-3. Commit the files and push them to the `main` branch.
-4. Open **Settings → Pages** in GitHub.
-5. Set **Source** to **GitHub Actions**.
-6. Open the **Actions** tab and confirm that **Deploy to GitHub Pages** passes.
-
-The workflow uses `npm ci`, runs the test suite, builds the application, and
-deploys `dist/`. Vite uses relative asset paths, so the project works under a
-GitHub Pages repository path without changing the repository name in the
-source.
-
 ## Project structure
 
 ```text
